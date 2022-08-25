@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row bg-dark justify-content-center">
+            <div class="col-6 p-0">
+                <img src="pingong.jpg" class="img-fluid" alt="" srcset="">
+                <h1 class="text-white text-center mb-0"><span id="firstPlayerScore">0</span> to <span id="secondPlayerScore">0</span></h1>
+                <div class="row justify-content-center">
+                    <h4 class="mb-4 text-white text-center">Playing to</h4>
+                    <div class="col-6 ">
+                        <select class="form-select" id ="maxScore">
+                            <option selected value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                          </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                    <button type="button" onclick="startGame()"  class="btn btn-warning mt-3 col-9 text-white">Start Game</button>
+                    <button type="button" class="btn btn-primary col-3 m-3" id="firstButton" onclick="updateFirstOne()">+1 First Player</button>
+                    <button type="button" class="btn btn-success col-3 m-3 " id="secondButton" onClick="updateSecondOne()">+1 Second Player</button>
+                    <button type="button" class="btn btn-danger col-3 m-3" onClick="reset()" >Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="mantainscore.js"></script>
+</body>
+</html>
